@@ -8,7 +8,7 @@ The machine receives an array of gifts. Each gift is a string. We need the machi
 
 The wrapping paper is the * symbol, and in order to wrap a gift, you need to place it surrounding the string. For example:
 
-```markdown
+```javascript
 # Example
 
 const gifts = ['cat', 'game', 'socks']
@@ -39,7 +39,7 @@ Since it is office work, their working hours are from Monday to Friday. So you o
 
 Given a year and an array with the dates of the holidays, return the number of extra hours that would be done during that year:
 
-```markdown
+```javascript
 # Example
 
 const year = 2022
@@ -57,3 +57,20 @@ Things to keep in mind:
 - The year may be a leap year. Make the checks you need for it, if necessary.
 - Although the holiday is December 31, the extra hours will be done the same year.
 - Date.getDay() method returns the day of the week of a date. 0 is Sunday, 1 is Monday, etc.
+
+## Challenge 3
+
+You receive a Christmas gifts pack that Santa Claus wants to deliver to the children. Each gift inside the pack is represented by a string and it has a weight equal to the number of letters in its name. Santa Claus's sleigh can only carry a weight limit.
+
+Santa Claus also has a list of reindeer able to help him to deliver the gifts. Each reindeer has a maximum weight limit that it can carry. The maximum weight limit of each reindeer is equal to twice the number of letters in its name.
+
+Your task is to implement a function distributeGifts(packOfGifts, reindeers) that receives a gifts pack and a list of reindeer and returns the maximum number of gifts packs that Santa Claus can deliver. You can't split gifts packs
+
+```javascript
+const packOfGifts = ["book", "doll", "ball"]
+const reindeers = ["dasher", "dancer"]
+
+// pack weights 4 + 4 + 4 = 12
+// reindeers can carry (2 * 6) + (2 * 6) = 24
+distributeGifts(packOfGifts, reindeers) // 2
+```
