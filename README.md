@@ -14,11 +14,11 @@ The wrapping paper is the * symbol, and in order to wrap a gift, you need to pla
 const gifts = ['cat', 'game', 'socks']
 const wrapped = wrapping(gifts)
 console.log(wrapped)
-/*[
+[
   "*****\n*cat*\n*****",
   "******\n*game*\n******",
   "*******\n*socks*\n*******"
-]*/
+]
 ```
 As you can see, the wrapping paper wraps the string. On top and bottom, so as not to leave any gaps, the corners are also covered with wrapping paper.
 
