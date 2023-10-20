@@ -1,8 +1,13 @@
-const year = 2022
-const holidays = ['01/06', '04/01', '12/25']
-
 function countHours(year, holidays) {
-    return 1
+    let hours = 0;
+    for (let holiday of holidays) {
+        const data = new Date(`${holiday}/${year}`)
+        const dataNumber = data.getDay()
+        if (dataNumber > 0 && dataNumber < 6) {
+            hours = hours + 2
+        }
+    }
+    return hours;
 }
 
-countHours(year, holidays) // 2 days -> 4 extra hours in the year
+console.log(countHours(1985, ['01/01', '01/06', '02/02', '02/17', '02/28', '06/03', '12/06', '12/25']))
